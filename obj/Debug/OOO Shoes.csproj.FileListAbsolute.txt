@@ -1,0 +1,19 @@
+C:\Users\Eduard\Desktop\OOO Shoes\bin\Debug\OOO Shoes.exe.config
+C:\Users\Eduard\Desktop\OOO Shoes\bin\Debug\OOO Shoes.exe
+C:\Users\Eduard\Desktop\OOO Shoes\bin\Debug\OOO Shoes.pdb
+C:\Users\Eduard\Desktop\OOO Shoes\bin\Debug\EntityFramework.dll
+C:\Users\Eduard\Desktop\OOO Shoes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eduard\Desktop\OOO Shoes\bin\Debug\EntityFramework.xml
+C:\Users\Eduard\Desktop\OOO Shoes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO Shoes.csproj.AssemblyReference.cache
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO Shoes.csproj.SuggestedBindingRedirects.cache
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO_Shoes.Properties.Resources.resources
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO_Shoes.FormAuthorization.resources
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO_Shoes.Views.FormProducts.resources
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO Shoes.csproj.GenerateResource.cache
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO Shoes.csproj.CoreCompileInputs.cache
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO Shoes.csproj.CopyComplete
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO Shoes.exe
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO Shoes.pdb
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO_Shoes.Views.FormProductinformation.resources
+C:\Users\Eduard\Desktop\OOO Shoes\obj\Debug\OOO_Shoes.Views.ProductEdit.resources
