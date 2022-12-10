@@ -76,8 +76,9 @@
 			this.btnExit.Name = "btnExit";
 			this.btnExit.Size = new System.Drawing.Size(75, 77);
 			this.btnExit.TabIndex = 1;
-			this.btnExit.Text = "Выход";
+			this.btnExit.Text = "Назад";
 			this.btnExit.UseVisualStyleBackColor = true;
+			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
 			// 
 			// labelOrganisationName
 			// 
@@ -109,9 +110,9 @@
 			// panelProducts
 			// 
 			this.panelProducts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-			this.panelProducts.Location = new System.Drawing.Point(2, 141);
+			this.panelProducts.Location = new System.Drawing.Point(5, 176);
 			this.panelProducts.Name = "panelProducts";
-			this.panelProducts.Size = new System.Drawing.Size(802, 323);
+			this.panelProducts.Size = new System.Drawing.Size(796, 294);
 			this.panelProducts.TabIndex = 2;
 			// 
 			// tlpFilters
@@ -196,6 +197,7 @@
 			// textBoxProductName
 			// 
 			this.textBoxProductName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.textBoxProductName.Font = new System.Drawing.Font("Candara", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.textBoxProductName.Location = new System.Drawing.Point(113, 52);
 			this.textBoxProductName.Name = "textBoxProductName";
 			this.textBoxProductName.Size = new System.Drawing.Size(204, 21);
@@ -235,7 +237,7 @@
 			this.Controls.Add(this.tlpHeader);
 			this.Font = new System.Drawing.Font("Candara Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MinimumSize = new System.Drawing.Size(820, 489);
+			this.MinimumSize = new System.Drawing.Size(820, 557);
 			this.Name = "FormProducts";
 			this.Text = "ООО \"Обувь\"";
 			this.Load += new System.EventHandler(this.FormProducts_Load);

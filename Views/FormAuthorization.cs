@@ -39,16 +39,11 @@ namespace OOO_Shoes
 			if (user == null)
 			{
 				MessageBox.Show(messageAuthorization, "Ошибка");
-				if (attempts > 0)
-				{
-					MessageBox.Show("Блокировка авторизации на 10 секунд", "Ошибка");
-					t.Interval = 10000;
-					t.Enabled = true;
-					t.Tick += TimerTick;
-					t.Start();
-				}
-					
-				attempts++;
+				MessageBox.Show("Блокировка авторизации на 10 секунд", "Ошибка");
+				t.Interval = 10000;
+				t.Enabled = true;
+				t.Tick += TimerTick;
+				t.Start();
 				return;
 			}
 

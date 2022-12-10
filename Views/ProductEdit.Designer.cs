@@ -60,6 +60,8 @@
 			this.labelOrganisationName = new System.Windows.Forms.Label();
 			this.pbLogo = new System.Windows.Forms.PictureBox();
 			this.btnSave = new System.Windows.Forms.Button();
+			this.btnDelete = new System.Windows.Forms.Button();
+			this.tlpFooter = new System.Windows.Forms.TableLayoutPanel();
 			this.tlpBody.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numCost)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numCurDiscount)).BeginInit();
@@ -68,6 +70,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
 			this.tlpHeader.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+			this.tlpFooter.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// tlpBody
@@ -525,25 +528,60 @@
 			// 
 			// btnSave
 			// 
+			this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnSave.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.btnSave.Location = new System.Drawing.Point(7, 450);
+			this.btnSave.Location = new System.Drawing.Point(3, 3);
 			this.btnSave.Name = "btnSave";
-			this.btnSave.Size = new System.Drawing.Size(150, 34);
+			this.btnSave.Size = new System.Drawing.Size(118, 43);
 			this.btnSave.TabIndex = 5;
 			this.btnSave.Text = "Сохранить";
 			this.btnSave.UseVisualStyleBackColor = true;
 			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+			// 
+			// btnDelete
+			// 
+			this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnDelete.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.btnDelete.Location = new System.Drawing.Point(708, 3);
+			this.btnDelete.Name = "btnDelete";
+			this.btnDelete.Size = new System.Drawing.Size(119, 43);
+			this.btnDelete.TabIndex = 6;
+			this.btnDelete.Text = "Удалить товар";
+			this.btnDelete.UseVisualStyleBackColor = true;
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+			// 
+			// tlpFooter
+			// 
+			this.tlpFooter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.tlpFooter.ColumnCount = 3;
+			this.tlpFooter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+			this.tlpFooter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+			this.tlpFooter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+			this.tlpFooter.Controls.Add(this.btnSave, 0, 0);
+			this.tlpFooter.Controls.Add(this.btnDelete, 2, 0);
+			this.tlpFooter.Location = new System.Drawing.Point(1, 435);
+			this.tlpFooter.Name = "tlpFooter";
+			this.tlpFooter.RowCount = 1;
+			this.tlpFooter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tlpFooter.Size = new System.Drawing.Size(830, 49);
+			this.tlpFooter.TabIndex = 7;
 			// 
 			// ProductEdit
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(835, 496);
-			this.Controls.Add(this.btnSave);
+			this.Controls.Add(this.tlpFooter);
 			this.Controls.Add(this.tlpBody);
 			this.Controls.Add(this.tlpHeader);
 			this.Font = new System.Drawing.Font("Candara Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.MinimumSize = new System.Drawing.Size(851, 535);
 			this.Name = "ProductEdit";
 			this.Text = "ООО \"Обувь\"";
 			this.Load += new System.EventHandler(this.ProductEdit_Load);
@@ -557,6 +595,7 @@
 			this.tlpHeader.ResumeLayout(false);
 			this.tlpHeader.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+			this.tlpFooter.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -594,5 +633,7 @@
 		private System.Windows.Forms.ComboBox cbMeasurementUnit;
 		private System.Windows.Forms.Button btnAddPic;
 		private System.Windows.Forms.Button btnSave;
+		private System.Windows.Forms.Button btnDelete;
+		private System.Windows.Forms.TableLayoutPanel tlpFooter;
 	}
 }

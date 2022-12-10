@@ -90,7 +90,9 @@ namespace OOO_Shoes.Views
 			   p => (p.ProductName.Contains(productName)
 			&& p.ProductDiscountAmount >= startDiscount
 			&& p.ProductDiscountAmount <= endDiscount)).ToList();
+
 			totalRows = products.Count();
+
 			if (byDescending)
 			{
 				products.OrderByDescending(p => p.ProductCost).ToList();
@@ -110,16 +112,17 @@ namespace OOO_Shoes.Views
 			panelProducts.Controls.Clear();
 			int pos = 0;
 			int startPanel = 5;
-			foreach (var product in products)
+			foreach (Product product in products)
 			{
 				ProductPanel prodPanel = new ProductPanel(product, panelProducts);
+				prodPanel.Tag = product;
 				prodPanel.Location = new Point(0 , pos++ * prodPanel.Height + startPanel);
-				startPanel = 0;
+				
 				panelProducts.Controls.Add(prodPanel);
-				prodPanel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+				//prodPanel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
 				prodPanel.DoubleClick += productDoubleClick;
 			}
-			labelProductCount .Text = $"{products.Count} из {totalRows}";
+			labelProductCount .Text = $"Найдено: {products.Count} из {totalRows}";
 		}
 
 
@@ -127,20 +130,26 @@ namespace OOO_Shoes.Views
 		public void productDoubleClick(object sender, EventArgs e)
 		{
 			ProductPanel prodPanel = sender as ProductPanel;
-			Product p = prodPanel.product;
+			Product p = (Product)prodPanel.Tag;
 			if (_userRole == "Администратор")
 			{
 				Form form = new ProductEdit(p);
 				this.Hide();
 				form.ShowDialog();
+				form.Dispose();
 				this.Show();
+				getProductsFromDB();
+
 			}
 			else
 			{
 				Form form = new FormProductinformation(p);
 				this.Hide();
 				form.ShowDialog();
+				form.Dispose();
 				this.Show();
+				getProductsFromDB();
+
 			}
 		
 		}
@@ -154,7 +163,15 @@ namespace OOO_Shoes.Views
 			Form form = new ProductEdit(null);
 			this.Hide();
 			form.ShowDialog();
+			form.Dispose();
 			this.Show();
+			getProductsFromDB();
+
+		}
+
+		private void btnExit_Click(object sender, EventArgs e)
+		{
+			this.Close();
 		}
 	}
 }

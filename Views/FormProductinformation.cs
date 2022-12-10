@@ -19,8 +19,10 @@ namespace OOO_Shoes.Views
 		{
 			this.product = product;
 			InitializeComponent();
+		
 			tlpHeader.BackColor = Color.FromArgb(Convert.ToInt16("B3", 16), Convert.ToInt16("F4", 16), Convert.ToInt16("E9", 16));
 			btnBack.BackColor = Color.FromArgb(Convert.ToInt16("A5", 16), Convert.ToInt16("E8", 16), Convert.ToInt16("87", 16));
+		
 		}
 
 		private void FormProductinformation_Load(object sender, EventArgs e)
@@ -39,14 +41,12 @@ namespace OOO_Shoes.Views
 
 			if (!(product.ProductPhoto == null))
 			{
-				pbImage.Image = Image.FromFile(Directory.GetCurrentDirectory() + @"\" + product.ProductPhoto);
+				pbImage.Image = Image.FromFile(Directory.GetCurrentDirectory() + @"\Images\" + product.ProductPhoto);
 			}
 			else
 			{
 				pbImage.Image = Properties.Resources.picture;
 			}
-
-
 		}
 
 		private void btnBack_Click(object sender, EventArgs e)

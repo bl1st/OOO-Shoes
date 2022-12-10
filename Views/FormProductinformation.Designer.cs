@@ -130,7 +130,8 @@
 			// 
 			// tlpBody
 			// 
-			this.tlpBody.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+			this.tlpBody.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.tlpBody.ColumnCount = 4;
 			this.tlpBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -526,6 +527,7 @@
 			this.Controls.Add(this.tlpBody);
 			this.Controls.Add(this.tlpHeader);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.MinimumSize = new System.Drawing.Size(850, 481);
 			this.Name = "FormProductinformation";
 			this.Text = "ООО \"Обувь\"";
 			this.Load += new System.EventHandler(this.FormProductinformation_Load);
